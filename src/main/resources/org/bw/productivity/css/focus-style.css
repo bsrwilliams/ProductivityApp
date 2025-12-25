@@ -1,0 +1,45 @@
+#title {
+    -fx-font-size: 60;
+}
+
+#startTimerButton, #stopTimerButton, #resetTimerButton, #switchFocusBreakButton {
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-border-width: 3;
+    -fx-background-color: "black";
+}
+
+#timerLabel {
+    -fx-font-size: 100;
+}
+
+.digit-label {
+    -fx-font-size: 100;
+    -fx-font-family: "monospace";
+}
+
+#footer-container {
+    -fx-padding: 20;
+}
+
+#settingsIcon {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/settings-icon.png");
+}
+
+#toggleMuteButton {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-color: transparent;
+}
+
+.muted {
+    -fx-background-image: url("../images/mute-sound-icon.png");
+}
+
+.unmuted {
+    -fx-background-image: url("../images/sound-icon.png");
+}

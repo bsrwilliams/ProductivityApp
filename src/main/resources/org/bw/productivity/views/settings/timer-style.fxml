@@ -1,0 +1,18 @@
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <Label text="Style" />
+    <Label text="Default timer style" />
+    <ChoiceBox value="focus">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="focus" />
+                <String fx:value="digital" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+</VBox>

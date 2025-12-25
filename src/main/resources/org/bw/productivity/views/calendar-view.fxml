@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.bw.productivity.controller.DateTimeController" minWidth="600" minHeight="200">
+
+    <Label fx:id="timeLabel" GridPane.halignment="LEFT" GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <GridPane.margin>
+            <Insets top="10" right="5" bottom="10" left="10" />
+        </GridPane.margin>
+    </Label>
+
+    <VBox fx:id="dateContainer" GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.columnIndex="1" alignment="CENTER" id="date-container">
+        <GridPane.margin>
+            <Insets top="10" right="10" bottom="10" left="5" />
+        </GridPane.margin>
+
+        <Label fx:id="dayOfMonthLabel" />
+        <Label fx:id="monthOfYearLabel" minWidth="10" alignment="CENTER" />
+    </VBox>
+
+</GridPane>

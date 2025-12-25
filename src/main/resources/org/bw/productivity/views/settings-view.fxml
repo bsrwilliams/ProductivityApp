@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.bw.productivity.controller.SettingsController"
+      prefHeight="600.0" prefWidth="1000.0">
+
+    <VBox id="primaryMenu" prefWidth="200">
+        <Label text="Settings" id="title" />
+        <VBox.margin>
+            <Insets left="15" />
+        </VBox.margin>
+
+        <Button id="pomodoroTimerButton" text="Pomodoro Timer" styleClass="nav-button" maxWidth="Infinity" onAction="#onPomodoroTimerSelected" />
+        <Button id="calendarIconButton" text="Calendar" styleClass="nav-button" maxWidth="Infinity" onAction="#onCalendarSelected" />
+    </VBox>
+
+    <VBox fx:id="secondaryMenu" prefWidth="200" />
+
+    <!--  Dynamic content display  -->
+    <StackPane fx:id="mainDisplay" prefWidth="600">
+        <Label fx:id="title" text="Config" />
+    </StackPane>
+</HBox>

@@ -1,0 +1,52 @@
+#title {
+    -fx-font-size: 42;
+    -fx-padding: 10 0 20 10;
+}
+
+#navigation-buttons {
+    -fx-background-color: grey;
+}
+
+#example-display {
+    -fx-background-color: blue;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.nav-button:hover, .nav-button-inner:hover {
+    -fx-background-color: yellow;
+}
+
+.nav-button-inner {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 20;
+}
+
+.nav-header {
+    -fx-font-size: 16;
+    -fx-padding: 10;
+}
+
+#pomodoroTimerButton {
+    -fx-background-image: url("../images/timer-icon.png");
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-padding: 0 25;
+}
+
+#calendarIconButton {
+    -fx-background-image: url("../images/calendar-icon.png");
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-padding: 0 25;
+}
