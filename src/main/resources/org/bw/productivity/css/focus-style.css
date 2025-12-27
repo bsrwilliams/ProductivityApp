@@ -22,18 +22,19 @@
     -fx-padding: 20;
 }
 
-#settingsIcon {
+.button-icon, #toggleMuteButton {
     -fx-background-repeat: no-repeat;
     -fx-background-size: contain;
     -fx-background-color: transparent;
-    -fx-background-image: url("../images/settings-icon.png");
+    -fx-background-position: center;
 }
 
-#toggleMuteButton {
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-    -fx-background-size: contain;
-    -fx-background-color: transparent;
+#calendarIcon {
+    -fx-background-image: url("../images/calendar-icon.png");
+}
+
+#settingsIcon {
+    -fx-background-image: url("../images/settings-icon.png");
 }
 
 .muted {

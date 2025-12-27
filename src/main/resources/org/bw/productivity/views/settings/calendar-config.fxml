@@ -8,4 +8,5 @@
 
     <CheckBox text="Show year"/>
     <CheckBox text="Show full month"/>
+    <CheckBox text="Use 24hr display" />
 </VBox>

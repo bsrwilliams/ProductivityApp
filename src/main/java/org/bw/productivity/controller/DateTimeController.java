@@ -8,7 +8,9 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
+import org.bw.productivity.util.NavigationManager;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.TextStyle;
 import java.util.Calendar;
@@ -78,6 +80,16 @@ public class DateTimeController {
 
         dayOfMonthLabel.setText(formatNumber(day));
         monthOfYearLabel.setText(month);
+    }
+
+    @FXML
+    private void switchToFocus() throws IOException {
+        NavigationManager.goTo("/org/bw/productivity/views/focus-view.fxml");
+    }
+
+    @FXML
+    private void openSettings() throws IOException {
+        NavigationManager.goTo("/org/bw/productivity/views/settings-view.fxml");
     }
 
     private void updateTime(Calendar timeInstance) {

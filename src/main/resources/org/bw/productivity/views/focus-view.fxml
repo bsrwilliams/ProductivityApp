@@ -27,7 +27,8 @@
     <HBox alignment="CENTER" id="footer-container" >
         <Label fx:id="currentRoundLabel" text="0" />
         <Region HBox.hgrow="ALWAYS" />
-        <Button id="settingsIcon" prefWidth="40" prefHeight="40" onAction="#openSettings" />
-        <Button fx:id="toggleMuteButton" onAction="#toggleMute" styleClass="unmuted" prefWidth="40" prefHeight="40" />
+        <Button id="calendarIcon" styleClass="button-icon" prefWidth="40" prefHeight="40" onAction="#switchToCalendar" />
+        <Button id="settingsIcon" styleClass="button-icon" prefWidth="40" prefHeight="40" onAction="#openSettings" />
+        <Button fx:id="toggleMuteButton" styleClass="unmuted" onAction="#toggleMute" prefWidth="40" prefHeight="40" />
     </HBox>
 </VBox>
