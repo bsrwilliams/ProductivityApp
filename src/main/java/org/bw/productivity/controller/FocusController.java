@@ -80,6 +80,11 @@ public class FocusController {
     }
 
     @FXML
+    private void switchToCalendar() throws IOException {
+        NavigationManager.goTo("/org/bw/productivity/views/calendar-view.fxml");
+    }
+
+    @FXML
     private void openSettings() throws IOException {
         NavigationManager.goTo("/org/bw/productivity/views/settings-view.fxml");
     }

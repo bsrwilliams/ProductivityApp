@@ -3,22 +3,44 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
 <?import javafx.geometry.Insets?>
+
 <GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.bw.productivity.controller.DateTimeController" minWidth="600" minHeight="200">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+    </columnConstraints>
 
-    <Label fx:id="timeLabel" GridPane.halignment="LEFT" GridPane.rowIndex="0" GridPane.columnIndex="0">
-        <GridPane.margin>
-            <Insets top="10" right="5" bottom="10" left="10" />
-        </GridPane.margin>
-    </Label>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS"/>
+    </rowConstraints>
 
-    <VBox fx:id="dateContainer" GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.columnIndex="1" alignment="CENTER" id="date-container">
-        <GridPane.margin>
-            <Insets top="10" right="10" bottom="10" left="5" />
-        </GridPane.margin>
+    <StackPane GridPane.columnIndex="0"
+               GridPane.rowIndex="0">
+        <Label fx:id="timeLabel" maxHeight="Infinity" alignment="CENTER" />
+    </StackPane>
 
-        <Label fx:id="dayOfMonthLabel" />
-        <Label fx:id="monthOfYearLabel" minWidth="10" alignment="CENTER" />
+    <VBox GridPane.columnIndex="1"
+          GridPane.rowIndex="0"
+          spacing="8"
+          GridPane.vgrow="ALWAYS">
+
+        <VBox fx:id="dateContainer" alignment="CENTER" id="date-container">
+            <VBox.margin>
+                <Insets left="10" right="10" />
+            </VBox.margin>
+
+            <Label fx:id="dayOfMonthLabel"/>
+            <Label fx:id="monthOfYearLabel" minWidth="10" alignment="CENTER" />
+        </VBox>
+
+        <Region VBox.vgrow="ALWAYS"/>
+
+        <HBox spacing="6" alignment="CENTER">
+            <Button id="timerIcon" styleClass="button-icon" prefWidth="40" prefHeight="40" onAction="#switchToFocus" />
+            <Button id="settingsIcon" styleClass="button-icon" prefWidth="40" prefHeight="40" onAction="#openSettings" />
+        </HBox>
     </VBox>
-
 </GridPane>

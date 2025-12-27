@@ -5,7 +5,7 @@
 #timeLabel {
     -fx-background-color: white;
     -fx-font-size: 140;
-    -fx-padding: 0 25;
+    -fx-padding: 0 15;
     -fx-border-color: black;
     -fx-border-width: 3;
 }
@@ -26,4 +26,19 @@
     -fx-font-size: 40;
     -fx-text-fill: white;
     -fx-max-width: infinity;
+}
+
+.button-icon {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+}
+
+#settingsIcon {
+    -fx-background-image: url("../images/settings-icon.png");
+}
+
+#timerIcon {
+    -fx-background-image: url("../images/timer-icon.png");
 }
